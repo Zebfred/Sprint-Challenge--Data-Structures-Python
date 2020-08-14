@@ -27,7 +27,7 @@ class RingBuffer:
         """ Return a list of elements from the oldest to the newest. """
         return self.data
 
-# sample usage
+# sample 
 if __name__=='__main__':
     x=RingBuffer(5)
     x.append(1); x.append(2); x.append(3); x.append(4)

@@ -1,10 +1,12 @@
+#My understanding is a ring buffer acts likes a normal link list till its memory is full
+ 
 class RingBuffer:
     """ class that implements a not-yet-full buffer """
     def __init__(self,capacity):
         self.capacity = capacity
         self.data = []
 
-
+#Once full it appends new data to the list by overwriting the oldest one
     class __Full:
         """ class that implements a full buffer """
         def append(self, x):

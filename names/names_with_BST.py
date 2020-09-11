@@ -1,3 +1,5 @@
+#This is a class
+# 
 class BSTNode:
     def __init__(self, value):
         self.value = value
@@ -6,7 +8,7 @@ class BSTNode:
 
     # Insert the given value into the tree
     def insert(self, value):
-        # take the current value of our node (self.value)    
+        # take the current value of node (self.value)    
         # compare to the new value we want to insert
 
         if value < self.value:

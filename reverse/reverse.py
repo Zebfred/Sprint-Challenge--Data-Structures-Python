@@ -3,19 +3,24 @@ class Node:
         self.value = value
         self.next_node = next_node
 
+    #gets value from node
     def get_value(self):
         return self.value
 
+    #gets next value from node
     def get_next(self):
         return self.next_node
 
+    #sets next value of node
     def set_next(self, new_next):
         self.next_node = new_next
+
 
 class LinkedList:
     def __init__(self):
         self.head = None
 
+    #adds value to the head node 
     def add_to_head(self, value):
         node = Node(value)
 
@@ -23,7 +28,7 @@ class LinkedList:
             node.set_next(self.head)
 
         self.head = node
-
+    #checks to see if the value is in the list
     def contains(self, value):
         if not self.head:
             return False
@@ -61,7 +66,7 @@ class LinkedList:
         node.next_node = prev
         self.reverse_list(next, node) 
     """    
-        
+    # reverses the list by taking the previous node's value from the current node's value    
     def reverse_list(self, current_node, prev):
         
         if current_node is None:
